@@ -14,5 +14,7 @@ Prosty program w C:
 main() {
 printf("hello world");
 }
+```
 
 [podstawy markdown]: http://daringfireball.net/projects/markdown/basics
+
