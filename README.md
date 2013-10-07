@@ -1,5 +1,7 @@
 ##  Środowisko programisty
 
+Tekst wpisujemy w notacji [Markdown](http://daringfireball.net/projects/markdown/basics)
+
 Aby zmienic haslo wnalezy na terminalu wpisac:
 ```sh
 passwd
