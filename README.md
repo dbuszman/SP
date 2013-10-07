@@ -1,4 +1,4 @@
-==  Środowisko programisty
+##  Środowisko programisty
 
 Aby zmienic haslo wnalezy na terminalu wpisac:
 ```sh
