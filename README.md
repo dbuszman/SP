@@ -8,7 +8,8 @@ passwd
 ```
 
 
-_Prosty program w_ __C__:
+####_Prosty program w_ __C__:
+
 
 ```c
 main() {
@@ -19,7 +20,8 @@ printf("hello world");
 [podstawy markdown]: http://daringfireball.net/projects/markdown/basics
 
 
-_Prosty program -_ __Java__:
+####_Prosty program -_ __Java__:
+
 
 ```java
 public class PierwszyProgram
@@ -31,3 +33,7 @@ public class PierwszyProgram
 }
 ```
 
+####_Jesli szukasz porady lub odpowiedzi na nurtujace Cie pytanie zajrzyj [tutaj] [stackoverflow]_
+
+
+[stackoverflow]: http://stackoverflow.com/
