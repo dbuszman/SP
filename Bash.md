@@ -9,5 +9,7 @@ mkdir -p dom nauka/{c,logo,pascal} praca/{dokumenty,zlecenia/{niezrealizowane,zr
 2\. Przejdź do katalogu dom i utwórz katalog wazne-sprawy.
 
 ```sh
-cd ...
+cd dom
+touch wazne-sprawy.txt
+cd ..
 ```
