@@ -35,5 +35,6 @@ Polecenia: split, cat, diff
 ```sh
 cd praca/zlecenia/zrealizowane
 
+
 cd ../..
 ```
