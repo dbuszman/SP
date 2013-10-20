@@ -19,7 +19,7 @@ cd ..
 ```sh
 cd dom/wazne-sprawy
 touch rachunki.txt
-cd ..
+cd ../..
 ```
 
 4\.Będąc w katalogu wazne-sprawy skopiuj plik rachunki.txt do katalogu zrealizowane.
