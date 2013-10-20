@@ -95,4 +95,8 @@ cal -3 11 2009 | cut -c 1-43
 11\.Jaki był dzień tygodnia 25 maja 1975 r. (cal i date)
 
 ```sh
+date +%A -d '1975-05-25'
+```
+
+
 
