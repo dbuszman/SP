@@ -41,16 +41,19 @@ cd ../../..
 6\.Utwórz plik wykonano.txt wielkości 11 bajtów, następnie podziel go pliki wielkości 5 bajtów. W ten sposób otrzymasz 3 pliki. (split)
 
 ```sh
+cd praca/zlecenia/zrealizowane
 cat>wykonano.txt
 0123456789
 split -b5 wykonano.txt
+cd ../../..
 ```
 
 7\.Będąc w katalogu logo skopiuj powyżej otrzymane 3 pliki do katalogu dokumenty.
 
 ```sh
 cd nauka/logo
-cp -p ../../praca/zlecenia/zrealizowane/{xaa,xab,xac} ../../praca/dokumenty
+cp ../../praca/zlecenia/zrealizowane/{xaa,xab,xac} ../../praca/dokumenty
+cd ../..
 ```
 
 8\.Będąc w katalogu dokumenty połącz skopiowane 3 pliki w plik odtworzono.txt, tak aby otrzymać plik o zawartości identycznej z wykonano.txt. Następnie plik odtworzono.txt skopiuj do katalogu wazne-sprawy.
@@ -58,6 +61,7 @@ cp -p ../../praca/zlecenia/zrealizowane/{xaa,xab,xac} ../../praca/dokumenty
 ```sh
 cd praca/dokumenty
 cat xaa xab xac > odtworzono.txt
+cd ../..
 ```
 
 9\.Będąc w katalogu wazne-sprawy sprawdź, czy są jakieś różnice w zawartości plików wykonano.txt i odtworzono.txt.
