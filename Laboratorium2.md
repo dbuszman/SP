@@ -27,5 +27,11 @@ chmod 640 program.c
 5\. Będąc w katalogu temp przenieś katalog wazne-sprawy do katalogu praca.
 
 ```sh
+mv dom/wazne-sprawy praca
+```
+
+6\.Zarchiwizuj cały katalog temp. (zip i tar)
+
+```sh
 
 ```
