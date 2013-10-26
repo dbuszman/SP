@@ -33,5 +33,17 @@ mv dom/wazne-sprawy praca
 6\.Zarchiwizuj cały katalog temp. (zip i tar)
 
 ```sh
+tar -cf tmp.tar.gz tmp
+```
 
+7\.Usuń katalog temp.
+
+```sh
+rm -rf tmp
+```
+
+8\.Odtwórz z archiwum katalog temp. (unzip i tar)
+
+```
+tar -xf tmp.tar.gz
 ```
