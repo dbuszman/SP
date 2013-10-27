@@ -1,12 +1,12 @@
 ## Laboratorium 2
 
-1\.Wyświetl na ekran 2 pierwsze wiersze pliku program.c. (head)
+1\. Wyświetl na ekran 2 pierwsze wiersze pliku program.c. (head)
 
 ```sh
 head -2 program.c
 ```
 
-2\.Wyświetl na ekran 4 ostatnie wiersze pliku program.c. (head, tail)
+2\. Wyświetl na ekran 4 ostatnie wiersze pliku program.c. (head, tail)
 
 ```sh
 tail -4 program.c
@@ -30,20 +30,27 @@ chmod 640 program.c
 mv dom/wazne-sprawy praca
 ```
 
-6\.Zarchiwizuj cały katalog temp. (zip i tar)
+6\. Zarchiwizuj cały katalog temp. (zip i tar)
 
 ```sh
 tar -cf tmp.tar.gz tmp
 ```
 
-7\.Usuń katalog temp.
+7\. Usuń katalog temp.
 
 ```sh
 rm -rf tmp
 ```
 
-8\.Odtwórz z archiwum katalog temp. (unzip i tar)
+8\. Odtwórz z archiwum katalog temp. (unzip i tar)
 
-```
+```sh
 tar -xf tmp.tar.gz
 ```
+
+9\. Posprzątaj na swoim koncie.
+
+```sh
+rm -rf tmp.tar.gz
+```
+
