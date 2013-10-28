@@ -54,3 +54,9 @@ tar -xf tmp.tar.gz
 rm -rf tmp.tar.gz
 ```
 
+10\. Dodatkowe zad. Wyświetl linie ze środka programu
+
+```sh
+head -n 7 program.c | tail -n 3
+```
+
