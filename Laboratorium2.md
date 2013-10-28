@@ -56,6 +56,12 @@ rm -rf tmp.tar.gz
 
 10\. Dodatkowe zad. Wyświetl linie ze środka programu
 
+Wyswietla linijki od 1 - 7
+```sh
+head -n 7 program.c 
+```
+wyswietla linijki od 4 -7
+
 ```sh
 head -n 7 program.c | tail -n 3
 ```
