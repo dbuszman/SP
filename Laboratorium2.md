@@ -78,7 +78,7 @@ Wyświetl 5,4,3 linijke od końca.
 tail -n 5 program.c | head -n 3 
 ```
 
-12\. To samo co ostatnio za pomoca polecenia *tac*.
+12\. To samo co w zadaniu 11 za pomoca polecenia *tac* i metodą z zadania 10.
 
 ```sh
 tac program.c |head -n 7 | tail -n 3 | tac
