@@ -84,4 +84,8 @@ tail -n 5 program.c | head -n 3
 tac program.c |head -n 7 | tail -n 3 | tac
 ```
 
-13\. 
+13\. Wyświetl linijki w ktorych wystepuje slowo zakończone na "main"
+
+```sh
+grep 'main\b' program.c
+```
