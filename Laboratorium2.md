@@ -15,7 +15,7 @@ tail -4 program.c
 3\. W pliku program.c znajdź wszystkie wiersze z wystąpieniem słowa „main”. (grep)
 
 ```sh
-grep main program.c
+grep -w main program.c
 ```
 
 4\. Plikowi program.c nadaj następujące uprawnienia: właściciel – czytanie, pisanie, grupa – czytanie, pozostali użytkownicy: brak uprawnień. (chmod)
@@ -83,3 +83,5 @@ tail -n 5 program.c | head -n 3
 ```sh
 tac program.c |head -n 7 | tail -n 3 | tac
 ```
+
+13\. 
