@@ -66,3 +66,20 @@ wyswietla linijki od 4 -7
 head -n 7 program.c | tail -n 3
 ```
 
+11\. Wyswietl 5 linii od końca.
+
+```sh
+tail -n 5 program.c 
+```
+
+Wyświetl 5,4,3 linijke od końca.
+
+```sh
+tail -n 5 program.c | head -n 3 
+```
+
+12\. To samo co ostatnio za pomoca polecenia *tac*.
+
+```sh
+tac program.c |head -n 7 program.c | tail -n 3
+```
