@@ -81,5 +81,5 @@ tail -n 5 program.c | head -n 3
 12\. To samo co ostatnio za pomoca polecenia *tac*.
 
 ```sh
-tac program.c |head -n 7 | tail -n 3
+tac program.c |head -n 7 | tail -n 3 | tac
 ```
