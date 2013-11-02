@@ -45,5 +45,11 @@ cat plik.txt | tr " \t" "\n"
 8\. Zlicz wszystkie pliki znajdujące się w katalogu /etc i jego podkatalogach.
 
 ```sh
+find /etc/ -type f 2> errors | wc -l
+```
 
+9\. Napisać polecenie zliczające ilość znaków z pierwszych trzech linii pliku /etc/passwd.
+
+```sh
+head -n 3 /etc/passwd | wc -c
 ```
