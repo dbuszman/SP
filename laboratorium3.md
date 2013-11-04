@@ -37,7 +37,7 @@ Przemyslec
 cat /etc/passwd  | tr "\n" " "  
 ```
 
-7\. Za pomocą filtru tr wykonaj modyfikację pliku plik.txt, polegającą na umieszczeniu każdego słowa w osobnej linii.
+7\. Za pomocą filtru tr wykonaj modyfikację pliku *plik.txt*, polegającą na umieszczeniu każdego słowa w osobnej linii.
 
 ```sh
 cat plik.txt | tr " \t" "\n"
