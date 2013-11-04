@@ -57,7 +57,7 @@ Sprawdzic
 find /var/ -type f 2> errors | wc -l
 ```
 
-ls -a /etc 
+ls -1 -a /etc 
 
 9\. Napisać polecenie zliczające ilość znaków z pierwszych trzech linii pliku */etc/passwd*.
 
