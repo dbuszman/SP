@@ -32,8 +32,9 @@ tail -n 7 /etc/passwd | head -n 3 | tac
 
 6\. Wyświetl zawartość pliku /etc/passwd w jednej linii.
 
+Przemyslec
 ```sh
-cat /etc/passwd  | tr -d "\n"
+cat /etc/passwd  | tr "\n" " "  
 ```
 
 7\. Za pomocą filtru tr wykonaj modyfikację pliku plik.txt, polegającą na umieszczeniu każdego słowa w osobnej linii.
