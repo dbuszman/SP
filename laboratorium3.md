@@ -51,6 +51,8 @@ cat plik.txt | tr " \t" "\n"
 
 8\. Zlicz wszystkie pliki znajdujące się w katalogu */var* i jego podkatalogach.
 
+Sprawdzic
+
 ```sh
 find /var/ -type f 2> errors | wc -l
 ```
