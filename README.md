@@ -1,4 +1,0 @@
-SP
-==
-
-Środowisko programisty
