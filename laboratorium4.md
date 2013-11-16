@@ -21,7 +21,7 @@ ls -l | tr -s "[ ]" "[ ]"| sed -e '/^d/d' | cut -f 5,9 -d " " | sort -n
 4\.Wyświetl zawartość pliku */etc/passwd* posortowaną według numerów UID w kolejności od największego do najmniejszego.
 
 ```sh
-cat /etc/passwd | sort -t ":" -k 3 -n
+cat /etc/passwd | sort -t ":" -k 3 -nr
 ```
 
 5\.Wyświetl zawartość pliku /etc/passwd posortowaną najpierw według numerów GID w kolejności od największego do najmniejszego, a następnie UID.
@@ -31,4 +31,15 @@ cat /etc/passwd | sort -t ":" -k 4 -nr -k 3 -nr
 ```
 
 6\.Podaj liczbę plików każdego użytkownika.
+
+```sh
+find / -printf "%U\n" | sort | uniq -c | sort
+```
+
+7\.Sporządź statystykę praw dostępu (dla każdego z praw dostępu podaj ile razy zostało ono przydzielone).
+
+```sh 
+find -printf "%m\n" | sort | uniq -c
+```
+
 
