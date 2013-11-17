@@ -43,3 +43,65 @@ find -printf "%m\n" | sort | uniq -c
 ```
 
 
+8\.
+
+```sh
+
+ls -l > lsout.txt                          #  1
+```
+Zapisze do pliku *lsout.txt* listę plików w bieżącym katalogu.
+
+```sh
+ls -la >> lsout.txt                        #  2
+```
+Dopisze do pliku *lsout.txt* ukryte pliki z bieżącego katalogu.
+
+```sh
+ps >> psout.txt                            #  3
+```
+Dopisze do pliku *psout.txt* listę aktywnych procesow.
+
+```sh
+free -m >> ~/wynik                         #  4
+```
+Dopisze do pliku *wynik* znajdującego sie w katalogu domowym informacje o wolnej i wykorzystanej pamieci operacyjnej w megabajtach.
+
+```sh
+kill -1 1234 > killout.txt 2>killerr.txt   #  5
+```
+Kończy proces o identyfikatorze 1234 i przakazuje komunikaty informacyjnych do pliku *killout.txt*, a bledy zapisuje do pliku *killerr.txt*
+
+```sh
+kill -1 1234 > killout.txt 2>&1            #  6
+```
+Kończy proces o identyfikatorze 1234 - komunikaty informacyjne oraz błedy zapisuje do pliku *killout.txt*
+
+```sh
+kill -1 1234 > /dev/null 2>&1              #  7
+```
+Kończy proces o identyfikatorze 1234 - nie wyświetla żadnych informacji
+
+```sh
+sort psout.txt > pssort.txt                #  8
+```
+Sortuje dane w pliku psout.txt i zapisuje wynik sortowania w pliku *pssort.txt*
+
+```sh
+ps | sort > pssort.txt                     #  9
+```
+Sortuje listę aktywnych procesow i zapisuje otrzymany wynik do pliku *pssort.txt*
+
+```sh
+cat lsout.txt | sort > lssort.txt          # 10
+```
+Sortuje zawartość pliku *lsout.txt* i zapisuje wynik do pliku *lssort.txt*
+
+```sh
+who | sort | more                          # 11
+```
+Sortuje listę zalogowanych uzytkownikow i wyświetla tyle ile się zmieści na stronie - umożliwiając przewijanie listy w doł.
+
+```sh
+who | sort | less                          # 12
+```
+Sortuje listę zalogowanych uzytkownikow i wyświetla tyle ile się zmieści na stronie - umożliwiając przewijanie listy w doł lub góre.
