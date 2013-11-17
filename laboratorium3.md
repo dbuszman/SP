@@ -46,7 +46,7 @@ cat plik.txt | tr " \t" "\n"
 7\.a\. Zastąpienie kilku spacji jedną spacja i zastąpienie pojedynczej spacji na znak nowego wiersza.
 
 ```sh
-
+cat plik.txt | tr -s [:space:] "\n"
 ```
 
 8\. Zlicz wszystkie pliki znajdujące się w katalogu */var* i jego podkatalogach.
