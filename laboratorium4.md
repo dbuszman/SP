@@ -105,3 +105,13 @@ Sortuje listę zalogowanych uzytkownikow i wyświetla tyle ile się zmieści na 
 who | sort | less                          # 12
 ```
 Sortuje listę zalogowanych uzytkownikow i wyświetla tyle ile się zmieści na stronie - umożliwiając przewijanie listy w doł lub góre.
+
+```sh
+find -type f | wc
+```
+Wyświetla liczbę linii, słów (liczbę plików w bieżącym katalogu i podkatalogach) i bajtów 
+
+```sh
+find -type f -print0 | wc --files0-from=-
+```
+Wyświetla liczbę linii, słów i bajtów we wszystkich znalezionych plikach (w bieżącym katalogu i podkatalogach)
