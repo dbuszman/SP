@@ -1,6 +1,6 @@
 ## Laboratorium 3
 
-1\. Wyświetl plik /etc/passwd z podziałem na strony przyjmując, że strona na 5 linii tekstu. (raczej more niż less)
+1\. Wyświetl plik */etc/passwd* z podziałem na strony przyjmując, że strona na 5 linii tekstu. (raczej more niż less)
 
 ```sh
 more -5 /etc/passwd
@@ -32,9 +32,9 @@ tail -n 7 /etc/passwd | head -n 3 | tac
 
 6\. Wyświetl zawartość pliku */etc/passwd* w jednej linii.
 
-Przemyslec
+
 ```sh
-cat /etc/passwd  | tr "\n" " "  
+cat /etc/passwd  | (tr "\n" " "; echo)  
 ```
 
 7\. Za pomocą filtru *tr* wykonaj modyfikację pliku *plik.txt*, polegającą na umieszczeniu każdego słowa w osobnej linii.
