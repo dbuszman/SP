@@ -9,13 +9,13 @@ ls -F | tr a-z A-Z | sed -e '/[/]$/d'
 2\.Wyświetl listę praw dostępu do plików w aktualnym katalogu, ich rozmiar i nazwę.
 
 ```sh
-ls -l | tr -s "[ ]" "[ ]" | cut -f 1,2,5,9 -d " " | sed -e '/^d/d'
+ls -l | tr -s " " | cut -f 1,2,5,9 -d " " | sed -e '/^d/d'
 ```
 
 3\.Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmiaru pliku.
 
 ```sh
-ls -l | tr -s "[ ]" "[ ]"| sed -e '/^d/d' | cut -f 5,9 -d " " | sort -n
+ls -l | tr -s " " | sed -e '/^d/d' | cut -f 5,9 -d " " | sort -n
 ```
 
 4\.Wyświetl zawartość pliku */etc/passwd* posortowaną według numerów UID w kolejności od największego do najmniejszego.
