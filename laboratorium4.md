@@ -18,6 +18,12 @@ ls -hgoF --full-time | tr -s " " | cut -f 1,3,7 -d " " | sed -e '/[/]/d' | tr " 
 ls -l | tr -s " " | sed -e '/^d/d' | cut -f 5,9 -d " " | sort -n
 ```
 
+lub
+
+```sh
+ls -1lS
+```
+
 4\.Wyświetl zawartość pliku */etc/passwd* posortowaną według numerów UID w kolejności od największego do najmniejszego.
 
 ```sh
