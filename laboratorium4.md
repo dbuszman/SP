@@ -21,7 +21,7 @@ ls -l | tr -s " " | sed -e '/^d/d' | cut -f 5,9 -d " " | sort -n
 lub
 
 ```sh
-ls -1lS
+ls -h1lS --full-time | sed -e '/^d/d' | tr -s " " | cut -f 5,9 -d " " | tac | tr " " "\t"
 ```
 
 4\.Wyświetl zawartość pliku */etc/passwd* posortowaną według numerów UID w kolejności od największego do najmniejszego.
