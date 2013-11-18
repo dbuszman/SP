@@ -39,7 +39,7 @@ cat /etc/passwd | sort -t ":" -k 4,3 -nr
 6\.Podaj liczbę plików każdego użytkownika.
 
 ```sh
-find / -printf "%U\n" | sort | uniq -c | sort
+find / -printf "%U\n" 2>/dev/null | sort | uniq -c | sort
 ```
 
 7\.Sporządź statystykę praw dostępu (dla każdego z praw dostępu podaj ile razy zostało ono przydzielone).
