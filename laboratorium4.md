@@ -9,7 +9,7 @@ ls -F | tr a-z A-Z | sed -e '/[/]$/d'
 2\.Wyświetl listę praw dostępu do plików w aktualnym katalogu, ich rozmiar i nazwę.
 
 ```sh
-ls -l | tr -s " " | cut -f 1,2,5,9 -d " " | sed -e '/^d/d'
+ls -hgoF --full-time | tr -s " " | cut -f 1,3,7 -d " " | sed -e '/[/]/d' | tr " " "\t"
 ```
 
 3\.Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmiaru pliku.
