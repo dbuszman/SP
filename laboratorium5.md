@@ -18,7 +18,7 @@ find / -name *conf* -type f 2> /dev/null -print
 find ~/ -type f ! -atime -20 
 ```
 
-4\. Znajdź w katalogu /etc wszystkie niepuste podkatalogi i pliki o nazwach zaczynających się na literę „a”.
+4\. Znajdź w katalogu */etc* wszystkie niepuste podkatalogi i pliki o nazwach zaczynających się na literę „a”.
 
 ```sh
 find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty -and -name a* \) 2> /dev/null
