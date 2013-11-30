@@ -34,6 +34,30 @@ exit 0
 
 2\. Napisać skrypt zawierający funkcję obliczającą silnię. Następnie należy obliczyć silnię z liczby, która jest argumentem skryptu. W przypadku niepoprawnego argumentu należy wypisać odpowiedni komunikat.
 
+```sh
+#!/bin/bash
+echo "Podaj argument silni: \n"
+read arg
+for arg in $arg
+do
+    WYNIK=1
+    LICZNIK=1
+    if [ $arg -ge 0 ];
+    then
+    while [ $LICZNIK -le $arg ]; 
+    do
+        WYNIK=$[ $WYNIK * $LICZNIK ]
+        LICZNIK=$[ $LICZNIK + 1]
+    done
+    echo "Silnia dla $arg = $WYNIK"
+    else
+    echo "$arg nie jest poprawnym argumentem"
+    fi
+
+done
+exit 0 
+```
+
 3\. Napisać skrypt zbierający jak najwięcej informacji o użytkowniku, którego login jest argumentem skryptu. Jeżeli skrypt nie ma argumentu, to należy użyć login osoby uruchamiającej skrypt.
 
 4\. Napisz skrypt usuwający z katalogu domowego i jego podkatalogów wszystkie pliki zwykłe o nazwie 'core' starsze niż 3 dni.
