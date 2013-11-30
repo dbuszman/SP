@@ -36,7 +36,7 @@ exit 0
 
 ```sh
 #!/bin/bash
-echo "Podaj argument silni: \n"
+echo "Podaj argument silni:"
 read arg
 for arg in $arg
 do
