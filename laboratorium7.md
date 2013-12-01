@@ -89,3 +89,10 @@ exit 0
 
 4\. Napisz skrypt usuwający z katalogu domowego i jego podkatalogów wszystkie pliki zwykłe o nazwie 'core' starsze niż 3 dni.
 
+```sh
+#!/bin/bash
+
+file=`find ~ -name "core" -ctime -3  -type f` 
+rm "$file"
+exit 0
+```
