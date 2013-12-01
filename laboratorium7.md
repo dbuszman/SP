@@ -60,4 +60,32 @@ exit 0
 
 3\. Napisać skrypt zbierający jak najwięcej informacji o użytkowniku, którego login jest argumentem skryptu. Jeżeli skrypt nie ma argumentu, to należy użyć login osoby uruchamiającej skrypt.
 
+```sh
+#!/bin/bash
+ISTNIEJE=0
+if [ "$1" == "" ]
+then
+        uzytkownik=`whoami`
+else
+        uzytkownik=$1
+fi
+echo "Informacje o uzytkowniku $uzytkownik:"
+who | grep -w "$uzytkownik" > /dev/null 2> /dev/null
+if [ $? -eq $ISTNIEJE ]
+then
+czas=`who |grep -w "$uzytkownik"| tr -s " " | cut -f 4 -d " "`
+data=`who |grep -w "$uzytkownik"| tr -s " " | cut -f 3 -d " "`
+adresip=`who |grep -w "$uzytkownik"| tr -s " " | cut -f 5 -d " "`
+
+        echo "$uzytkownik jest zalogowany"
+        echo "$uzytkownik zalogowal sie o godzinie: $czas, dnia: $data"
+        echo "Adres IP uzytkownika $uzytkownik to: $adresip"
+else
+        echo "$uzytkownik nie jest zalogowany"
+fi
+
+exit 0
+```
+
 4\. Napisz skrypt usuwający z katalogu domowego i jego podkatalogów wszystkie pliki zwykłe o nazwie 'core' starsze niż 3 dni.
+
