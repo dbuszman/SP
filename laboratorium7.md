@@ -1,6 +1,6 @@
 ## Laboratorium 7
 
-1\. W bieżącym katalogu zamienić rozszerzenia wszystkich plików z rozszerzeniem htm na html. Jeżeli w nazwie pliku istnieje spacja, to należy zamienić ją na znak podkreślenia.
+1\. W bieżącym katalogu zamienić rozszerzenia wszystkich plików z rozszerzeniem *htm* na *html*. Jeżeli w nazwie pliku istnieje spacja, to należy zamienić ją na znak podkreślenia.
 
 ```sh
 #!/bin/bash
@@ -87,7 +87,7 @@ fi
 exit 0
 ```
 
-4\. Napisz skrypt usuwający z katalogu domowego i jego podkatalogów wszystkie pliki zwykłe o nazwie 'core' starsze niż 3 dni.
+4\. Napisz skrypt usuwający z katalogu domowego i jego podkatalogów wszystkie pliki zwykłe o nazwie *'core'* starsze niż 3 dni.
 
 ```sh
 #!/bin/bash
