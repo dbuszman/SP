@@ -30,7 +30,7 @@ ls -h1lS --full-time | sed -e '/^d/d' | tr -s " " | cut -f 5,9 -d " " | tac | tr
 cat /etc/passwd | sort -t ":" -k 3 -nr
 ```
 
-5\.Wyświetl zawartość pliku /etc/passwd posortowaną najpierw według numerów GID w kolejności od największego do najmniejszego, a następnie UID.
+5\.Wyświetl zawartość pliku */etc/passwd* posortowaną najpierw według numerów GID w kolejności od największego do najmniejszego, a następnie UID.
 
 ```sh
 cat /etc/passwd | sort -t ":" -k 4,3 -nr
