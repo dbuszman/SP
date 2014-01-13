@@ -6,7 +6,7 @@
 find ~/ -maxdepth 1 -type f -mtime -10 -print
 ```
 
-2\. Znajdź wszystkie pliki zwykłe w systemie, które mają w nazwie ciąg znaków „conf” i wyświetl ich nazwy na ekranie.
+2\. Znajdź wszystkie pliki zwykłe w systemie, które mają w nazwie ciąg znaków *„conf”* i wyświetl ich nazwy na ekranie.
 
 ```sh
 find / -name *conf* -type f 2> /dev/null -print
@@ -24,7 +24,7 @@ find ~/ -type f ! -atime -20
 find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty \) 2> /dev/null
 ```
 
-5\. Z bieżącego katalogu usuń pliki, których nazwa zaczyna się na literę „x” i zawiera dokładnie trzy znaki.
+5\. Z bieżącego katalogu usuń pliki, których nazwa zaczyna się na literę *„x”* i zawiera dokładnie trzy znaki.
 
 ```sh
 rm x??
