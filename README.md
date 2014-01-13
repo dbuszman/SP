@@ -53,7 +53,4 @@ Odnośniki do laboratoriów:
 [lab6]: https://github.com/dbuszman/SP/blob/master/Laboratorium6.md
  - [Laboratorium 7] [lab7] 
 [lab7]: https://github.com/dbuszman/SP/blob/master/Laboratorium7.md
- - [Laboratorium 8] [lab8] 
-[lab8]: https://github.com/dbuszman/SP/blob/master/Laboratorium8.md
- - [Laboratorium 9] [lab9] 
-[lab9]: https://github.com/dbuszman/SP/blob/master/Laboratorium9.md
+
